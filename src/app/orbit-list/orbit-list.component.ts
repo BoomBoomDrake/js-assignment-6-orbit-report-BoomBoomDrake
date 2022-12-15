@@ -27,4 +27,9 @@ export class OrbitListComponent implements OnInit {
 		});
 	}
 
+	isOddEntry(satellite: Satellite, satellites: Satellite[]): boolean {
+		if (satellites.indexOf(satellite) % 2 === 0) return true
+		return false
+	}
+
 }
